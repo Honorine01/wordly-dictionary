@@ -1,0 +1,181 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #263b64;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Search section */
+.search-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#search-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+#word-input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2878c8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5fa5;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #f5b942;
+    outline-offset: 2px;
+}
+
+/* Status messages */
+#status-message {
+    margin: 20px 0;
+    color: #b42318;
+}
+
+/* Results section */
+#results-section {
+    margin-top: 25px;
+}
+
+#word-header,
+.definition-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+#word-title {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#pronunciation {
+    color: #526579;
+    font-size: 1.1rem;
+}
+
+.definition-card h3 {
+    color: #263b64;
+}
+
+.definition-card p {
+    margin-bottom: 10px;
+}
+
+.synonyms {
+    color: #2878c8;
+}
+
+/* Audio button */
+#audio-button {
+    margin-top: 10px;
+}
+
+/* Favorites section */
+#favorites-section {
+    margin-top: 35px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#favorites-list {
+    padding-left: 20px;
+}
+
+#favorites-list li {
+    margin-bottom: 10px;
+}
+
+.favorite-word {
+    color: #2878c8;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.favorite-word:hover {
+    color: #1b5fa5;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #263b64;
+    color: white;
+    text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 500px) {
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}

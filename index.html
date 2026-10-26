@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly-Online-Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Wordly</h1>
+        <p>Discover the meaning of any word</p>
+    </header>
+
+    <main>
+        <section class="searh-section">
+            <form id="search-form"
+            <label for="word-input">Search for a word</label>
+
+            <div class="search-bar">
+                <input 
+                       type="text"
+                       id="word-input"
+                       placeholder="Enter a word..."
+                       required>
+                       <button type="submit">Search</button>
+        </div>
+        </form>
+        </section>
+
+        <p id="status-message" role="status" aria-live="polite"></p>
+
+        <section id="results-section" aria-live="polite">
+            <div id="word-header">
+                <h2 id="word-title"></h2>
+                <p id="pronunciation"></p>
+                <button id="audio-button" type="button" hidden>
+                    play pronunciation</button>
+                <button id="favorite-button" type="button" hidden>
+                    Save to favorites</button>    
+            </div>
+
+            <div id="definitions-container">
+                <!-- Word definitions will appear here. -->
+            </div>
+        </section>
+
+        <section id="favorites-section">
+            <h2>My Favorite Words</h2>
+            <ul id="favorites-list">
+                <!-- Saved words will appear here. -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Wordly &copy; 2026</p>
+    </footer>
+    
+</body>
+</html>
